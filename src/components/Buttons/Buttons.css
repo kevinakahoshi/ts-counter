@@ -1,0 +1,40 @@
+.buttons-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.controls {
+  font-size: 1.5rem;
+  outline: none;
+  width: 100%;
+  border: none;
+  transition: .3s all;
+}
+
+.controls:not([disabled]) {
+   cursor: pointer;
+}
+
+.controls[disabled] {
+  cursor: not-allowed;
+}
+
+.controls[disabled]:hover {
+  background: #ffffff;
+}
+
+.controls:not(:hover) {
+  background: #ffffff;
+}
+
+.control:hover {
+  background: #f1f1f1;
+}
+
+.control-decrease {
+  border-radius: .5rem 0 0 .5rem;
+}
+
+.control-increase {
+  border-radius: 0 .5rem .5rem 0;
+}

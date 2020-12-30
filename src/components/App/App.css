@@ -1,0 +1,34 @@
+html,
+body,
+#root {
+  height: 100%;
+  background: #282c34;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  grid-gap: 2rem;
+  padding: 2rem;
+}
+
+.col-left,
+.col-right {
+  border: 2px solid #ffffff;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.input-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: .5rem;
+}
